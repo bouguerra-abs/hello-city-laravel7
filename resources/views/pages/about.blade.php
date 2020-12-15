@@ -1,9 +1,13 @@
 @extends('app')
 
-@section('content')
-        <p>Built with &hearts; by STOURIDGE.</p>
+@section('title', 'About Us | Hello City')
 
-        <p><a href="/">Revenir à la page d'accueil</a></p>
+
+@section('content')
+
+    <p>Built with &hearts; by STOURIDGE.</p>
+
+    <p><a href="/">Revenir à la page d'accueil</a></p>
 
 @endsection
     

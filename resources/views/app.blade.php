@@ -6,14 +6,19 @@
 
         <title>@yield('title', config('app.name'))</title>
 
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
     </head>
-    <body>
-       @yield('content')
+    <body class="py-6 flex flex-col justify-between items-center min-h-screen">
+        <main role="main" class="flex flex-col justify-center items-center">
+            @yield('content')
+        </main>
 
         <footer>
-            <p>&copy; Copyright {{ date('Y') }} 
+            <p class="text-gray-400">
+                &copy; Copyright {{ date('Y') }} 
                 @if(! Route::is('about'))
-                    &middot; <a href="{{ route('about') }}">About Us</a>
+                    &middot; <a href="{{ route('about') }}" class="text-indigo-500 hover:text-indigo-600 underline">About Us</a>
                 @endif
             </p>
         </footer>

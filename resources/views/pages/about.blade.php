@@ -5,7 +5,7 @@
 
 @section('content')
 
-<img src="/images/Rasmus-lerdorf.jpg" alt="STOURIDGE Logo" style="width:200px;height:200px;border-radius: 50%">
+<img src="{{ asset('images/Rasmus-lerdorf.jpg') }}" alt="STOURIDGE Logo" style="width:200px;height:200px;border-radius: 50%">
 
     <p>Built with &hearts; by STOURIDGE.</p>
 

@@ -1,6 +1,4 @@
-@extends('app')
-
-{{-- @section('title', 'Hello City') --}}
+@extends('layouts.app')
 
 
 @section('content')
